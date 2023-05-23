@@ -1,0 +1,30 @@
+{
+   "action": {
+      "default_icon": "image/icon1.png",
+      "default_title": "FUTBot 2.1.5"
+   },
+   "background": {
+      "service_worker": "js/cc2.js"
+   },
+   "content_scripts": [ {
+      "js": ["js/jquery-3.1.1.min.js"  ,  "js/cc1.js" ],
+      "matches": [ "https://www.ea.com/*"]
+   } ],
+   "description": "Automate your sniping easily",
+   "host_permissions": [ "https://xzenmart.com/*", "https://www.ea.com/*"],
+   "icons": {
+      "128": "image/icon1.png",
+      "16": "image/icon1.png",
+      "48": "image/icon1.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqv6K3AHNLRtz/2n+c92JWZsN8QYV5bFD2xCib/DuU4qfTOPc7wDzEfPjuNY4rFNqK4TonnUYnfdGUbR3Gx+pgj2lTu9BFSt0VB0oTYHRjKa1FCah7xzvr9jdFerYRG+TWVSUHncEvJie//i0RNB4JolnhbTwaGiYl9gyfBAvnJyyMhJc6+faseworFoYM14SyUH1XCSwLV2uaEycmPnixVCMvrdK5yFSEzg47YYYVU4aS7fdwxyt5BOaGf/PWeP8b6oKr8zMynW7MYIGWZ+fPPZgA69u95GDS8ZGbMkAvHSze/l477So3RjzQJTuqQFgCeClbt1IH9pkMcmk26OGXwIDAQAB",
+   "manifest_version": 3,
+   "name": "FUTBot",
+   "permissions": [ "storage" ,"tabs", "windows"],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.1.5",
+   "web_accessible_resources": [ {
+      "matches": [ "https://www.ea.com/*" ],
+      "resources": [ "bell.wav", "image/icon1.png" ]
+   } ]
+}

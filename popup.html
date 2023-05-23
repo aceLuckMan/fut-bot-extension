@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+
+      <title>options</title>
+      <style type="text/css">
+          html{min-height:800px;max-height:800px;max-width:500px;min-width: 500px;}
+          body{
+            /* background-size: contain; */
+            background-color: rgb(58, 70, 139) !important;
+          }
+          .navbar {
+              margin-bottom: 20px;
+          }
+          .nav-item{
+            color:#99d6ff;
+
+          }
+          .nav-item:hover{
+            color: #66c2ff;
+          }
+          h1{
+            color: white;
+            text-align: center;
+          }
+          .container{
+            color: #ffffff;
+            font-family:Open Sans;
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: bold;
+          }
+          input{
+            background-color: rgb(232, 240, 254,0.3) !important;
+            font-weight: bold;
+            color: white !important;
+            font-size: large;
+          }
+          input:focus{
+            background-color: rgb(232, 240, 254,0.5);
+
+          }
+          p{
+            color: #f3f3f3;
+            font-family:Open Sans;
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 400;
+          }
+          img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+          }
+          .contro{
+            text-align: center;
+          }
+          .loo{
+            color: red;
+          }
+          
+      </style>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css" rel="stylesheet" />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet" />
+      <link href="css/jquery.toast.min.css" rel="stylesheet" />
+    </head>
+    <body class="">
+     <nav class="navbar navbar-expand-sm mt-2" style="font-weight: 800;">
+        <ul class="navbar-nav" style="flex-direction: row; font-size: 18px;">
+          <a class="navbar-brand" href="#">
+            <img src="image/icon1.png" alt="Logo" style="width:60px;margin: -10px;">
+          </a>
+          <li class="nav-item px-2 pt-2">
+            <a id="Contact" type="button" class="nav-item"  data-toggle="modal" data-target="#enconatactyModal">
+              <i class="fa fa-phone"></i>
+              Contact Us
+            </a>
+          </li>
+          <li class="nav-item p-0 pl-2">
+            <select id="langSel" class="custom-select nav-item" style="font-weight: 800;cursor: pointer;color: #99d6ff; background-color:rgb(58, 70, 139);">
+              <option value="en">English</option>
+              <option value="ar" >عربي</option>
+              <option value="de">Deutsch</option>
+              <option value="It">Italian</option>
+              <option value="du">Dutch</option>
+              <option value="po">Polish</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+      
+        <div class="container px-4">
+         
+          <label id="intelang" class="label label-default hidden" style="display: none;">Language :</label>
+          <label id="intervaltxt" class="label label-default">The time in seconds between each search:</label><br>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" value="1" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample">
+            <label class="custom-control-label" for="defaultInline1">1</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" value="2" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample">
+            <label class="custom-control-label" for="defaultInline2">2</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" value="3" class="custom-control-input" id="defaultInline3" name="inlineDefaultRadiosExample">
+            <label class="custom-control-label" for="defaultInline3">3</label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" value="4" class="custom-control-input" id="defaultInline4" name="inlineDefaultRadiosExample">
+            <label class="custom-control-label" for="defaultInline4">4</label>
+          </div>
+          <p></p>
+          <div class="form-group">
+            <label for="Reset" id="searches">Change the price of the Min Bid up to :</label>
+            <input type="text" class="form-control input-sm" id="Reset">
+            <br/>
+
+            <label for="usr" id="searchess">Number Of Time To Reset Price:</label>
+            <input type="text" class="form-control input-sm" id="usr">
+            
+
+          </div>
+          <label id="op">Options : </label> 
+          <br>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" value="10" class="custom-control-input" id="Buy_one" name="option">
+            <label class="custom-control-label" id="Buyplayer" for="Buy_one">Buy one card and Stop</label>
+          </div>
+          <br/>
+
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" value="20" class="custom-control-input" id="And_Sell" name="option">
+            <label class="custom-control-label" id="Auto_Selll" for="And_Sell">Buy one card and sell it </label>
+          </div>
+          <br/>
+
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" value="40" class="custom-control-input" id="And_multiSell" name="option">
+            <label class="custom-control-label" id="multi_Selll" for="And_multiSell">Buy multiple cards and sell them</label>
+          </div>
+          <br/>
+      
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" value="30" class="custom-control-input" id="Buy_multi" name="option">
+            <label class="custom-control-label" id="Buy_multitxt" for="Buy_multi">
+              Buy multiple cards 
+            </label>
+          </div>          
+          <br/>
+
+          <br/>
+          <div class="form-group">
+            <label for="nump_buy" id="nump_buy_txt">Number of cards you want to buy :</label>
+            <input type="text" class="form-control input-sm" id="nump_buy">
+          </div>
+          <div class="form-group">
+            <label for="start_price" id="startarp">Start price:</label>
+            <input placeholder="start price minmam 150" type="text" class="form-control input-sm" id="start_price">
+          </div>
+          <div class="form-group">
+            <label for="buy_now_price" id="buyar">Buy now price:</label>
+            <input placeholder="buy now max 10,000" type="text" class="form-control input-sm" id="buy_now_price">
+            <br>
+          </div>
+          <div class="">
+              <label class="label label-default" id = "set_start_key">Setting Start Key:</label>
+              <input  type="text" class="form-control input-sm" id="startk">
+              <label class="label label-default mt-2" id = "set_stop_key">Setting Stop Key:</label>
+              <input type="text" class="form-control input-sm" id="stopk">
+          </div>
+
+          <div class="form-group text-center pt-3 pb-2">
+            <button type="submit" id="save-button" class="btn btn-success btn-lg px-5 pt-1" style="font-size: 24px; font-weight: 900;border-radius: 20px;" >save</button>
+          </div>
+        </div>
+
+        <div class="modal fade" id="enconatactyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel2">Contact Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Instagram: https://instagram.com/futbot97
+                <br/>
+                Email: Futbott97@gmail.com
+                <br/>
+                <br/>
+                copyright © 2023 FUTBOT. All rights reserved.
+              </div>
+              <br>
+            </div>
+          </div>
+        </div>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap1.min.js"></script>
+    <script src="js/jquery.toast.min.js"></script>
+    <script src="js/cc3.js"></script>
+
+    
+    </body>
+</html>

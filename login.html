@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title>football</title>
+	 <style type="text/css">
+    html{width:500px;min-height:600px}
+    body{
+      background-image: url("image/bg.png");
+      padding-bottom: 20px;
+
+    }
+
+
+.navbar {
+    margin-bottom: 20px;
+}
+    h1{
+      color: white;
+      text-align: center;
+    }
+    .container{
+      color: #6b8593;
+      font-family:Open Sans;
+      font-size: 20px;
+      line-height: 26px;
+     
+     font-weight: bold;
+
+    }
+    p{
+      color: #f3f3f3;
+      font-family:Open Sans;
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 400;
+    }
+    img{
+        display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+    }
+    input{
+      background-color: rgb(232, 240, 254,0.3) !important;
+      
+    }
+    input:focus{
+      background-color: rgb(232, 240, 254,0.5);
+      font-size: 18px !important;
+      font-weight: bold;
+      color:#1c1a34 !important;
+
+    }
+  </style>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet" />
+<link href="css/jquery.toast.min.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+  
+
+<img src="image/futbot.png"/>
+
+<!-- ar Modal -->
+<div class="modal fade" id="armyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">انتهت صلاحية ترخيص البوت </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Instagram: https://instagram.com/futbot97
+        <br/>
+        Email: Futbot97@gmail.com
+        <br/>
+        <br/>
+
+        copyright © 2023 FUTBOT.com    All rights reserved
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--En Modal -->
+<div class="modal fade" id="enmyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel2">Your FUTbot license expired</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        You must renew your license in order to run this bot. Contact  Us to renew your license
+        <br>
+        Instagram: https://instagram.com/futbot97
+        <br/>
+        Email: Futbott97@gmail.com
+        <br/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="enconatactyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel2">Contact Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Instagram: https://instagram.com/futbot97
+        <br/>
+        Email: Futbott97@gmail.com
+        <br/>
+        <br/>
+        copyright © 2023 FUTBOT. All rights reserved.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container text-white" style="margin-top: -35px;">
+    <div class="form-group  m-0 px-3">
+      <label id="intelang" class="label label-default pr-5">Language :</label>
+        <!-- Default inline 1-->
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" value="ar" class="custom-control-input" id="arid" name="languagee">
+        <label class="custom-control-label" for="arid">عربي </label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" value="en" class="custom-control-input" id="enid" name="languagee">
+        <label class="custom-control-label" for="enid">English</label>
+      </div>
+    </div>
+    <div class="form-group  m-0 px-3">
+      <label id="Email" for="exampleInputEmail1">Email Address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+
+    <div class="form-group  m-0 px-3">
+      <label id="Passl" for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="text-center mt-3">
+      <button type="submit" id="btn" class="btn btn-primary m-3 btn-lg">Sign In </button>
+      <button id="Contact"   data-toggle="modal" data-target="#enconatactyModal" style="text-align: right;" type="button" class="btn btn-success btn-lg m-3" > 
+        Sign Up
+      </button>
+    </div>
+
+</div>
+
+<script src="js/jquery-3.1.1.min.js">
+</script>
+<script src="js/popper.min.js">
+</script>
+<script src="js/tether.min.js">
+</script>
+<script src="js/bootstrap.min.js">
+</script>
+<script src="js/jquery.toast.min.js"></script>
+<script src="js/cc4.js"></script>
+</body>
+
+</html>
